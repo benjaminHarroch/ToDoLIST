@@ -1,0 +1,35 @@
+<%-include('partiales/header')%>
+
+
+
+<div class="center">
+    <div class="mobile">
+        <div class="screen">
+            <ul>
+                <%Task.forEach(function (item){%>
+                    <%console.log(item);%>
+                    <form action="/delete" method="POST">
+                        <li class="list1">
+                             <input type="checkbox" onchange="this.form.submit()" value=<%=item._id%> name="delete"> 
+                             <%= item.name %> </li>
+                <%})%>
+                    </form>
+            </ul>
+
+            <div class="input">
+                <form action="/" method="POST">
+                    <input type="text" name="newTask" id="input-iphon" placeholder="new task to do...">
+                    <button type="submit"><i class="fas fa-arrow-alt-circle-up"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="button">
+              <i class="fa fa-home"></i>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%-include('partiales/footer')%>
