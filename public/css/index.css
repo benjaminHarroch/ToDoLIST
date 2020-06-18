@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background: #262626;
+}
+h1{
+    color: #ffffff;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mobile{
+    width: 350px;
+    background: blanchedalmond;
+    height: 580px;
+    border-radius: 35px;
+    box-sizing: border-box;
+    border:1px solid #262626;
+    box-shadow:inset 2px 2px #262626;
+}
+.screen{
+    background: #262626;
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin-left:10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    overflow: auto;
+
+}
+.button{
+  position: absolute;
+  bottom: 30px;
+  left:48% ;
+  width: 29px;
+  height:31px;
+  font-size: 24px;
+  border: solid 1px #262626;
+  border-radius: 50%;
+}
+.screen ul .list1{
+    font-size: 17px;
+    font-family: 'Libre Baskerville', serif;
+    list-style: none;
+    color: #ffe75e;
+    padding: 18px;
+    border-bottom:  3px double #ffe75e ;
+    
+}
+.input{
+    position: absolute;
+    left: 20%;
+    bottom: 15px;
+ 
+}
+.input button{
+ margin-bottom: 10px;
+ background-color: #ffe75e;
+ border-radius: 30%;
+ cursor: pointer;
+ 
+}
+.input-iphon{
+    border: solid #ffe75e 1px;
+    box-shadow: inset;
+    border-radius: 3px;
+    padding:15px;
+}
+.div-list{
+    display: none;
+}
+.button-i + .div-list{
+display: block;
+}
